@@ -1,0 +1,23 @@
+development:
+  adapter: postgresql
+  database: hospital_management_development
+  username: himanshu
+  password: 7089
+  host: localhost
+  port: 5432  # Default PostgreSQL port
+
+test:
+  adapter: postgresql
+  database: hospital_management_test
+  username: himanshu
+  password: 7089
+  host: localhost
+  port: 5432  # Default PostgreSQL port
+
+production:
+  adapter: postgresql
+  database: hospital_management_production
+  username: himanshu
+  password: <%= ENV['DATABASE_PASSWORD'] %>  # Use environment variable for security
+  host: localhost
+  port: 5432  # Default PostgreSQL port
